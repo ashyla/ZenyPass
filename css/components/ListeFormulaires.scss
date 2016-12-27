@@ -1,0 +1,23 @@
+.ListeFormulaires {
+  .listeForm{
+    margin-left: $sidebar-width-large;
+    list-style-type: none;
+    width: auto;
+  }
+  h2 {
+    margin-left: 200px;
+  }
+  span {
+    margin-left: 200px;
+  }
+  .line {
+    width: auto;
+    height: 2px;
+    margin: 20px;
+    background-color: $primary-color;
+  }
+  .ion-arrow-down-b{
+    color: $primary-color;
+    float: right;
+  }
+}

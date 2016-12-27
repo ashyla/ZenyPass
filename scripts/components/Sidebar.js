@@ -24,7 +24,6 @@ var Sidebar = React.createClass({
     return(
       <div className="Home">
         <img src="./img/logo_zenypass_fill_21A0B7_512x256.png"/>
-        <h1>Hello ZenyPass</h1>
       </div>
     )
   },

@@ -10,14 +10,15 @@ var ListFormulaires = React.createClass({
       formulaires: []
     }
   },
-  componentDidMount: function () {
-    var data = firebase.database().ref('zenyway-4aec8/Formulaires');
+  componentWillMount: function () {
+    var data = firebase.database().ref('Formulaires');
     this.bindAsArray(data, "formulaires");
   },
   render: function() {
     return(
       <div className="listeForm">
-        {this.state.formulaires.map(function(formulaire,i){
+        {
+          this.state.formulaires.map(function(formulaire,i){
           return(
             <Formulaire formulaire={formulaire} key={formulaire['.key']}/>
           )

@@ -13,7 +13,7 @@ var App = React.createClass({
             <Sidebar history={this.props.history}/>
           </aside>
         </div>
-        <div className="Liste-Formulaires">
+        <div className="ListeFormulaires">
           <ListFormulaires />
         </div>
       </div>
