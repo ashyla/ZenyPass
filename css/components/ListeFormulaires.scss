@@ -20,4 +20,105 @@
     color: $primary-color;
     float: right;
   }
+  .ion-arrow-up-b{
+    color: $primary-color;
+    float: right;
+  }
+  .ion-close-round{
+    color: $primary-color;
+    float: right;
+    position: relative;
+    right: 1rem;
+    bottom: 3rem;
+  }
+  .ion-trash-a{
+    color: red;
+    float: right;
+    position: relative;
+    right: 0.2rem;
+    bottom: 1rem;
+  }
+  .DetailsForm{
+    width: auto;
+    height: auto;
+    margin: 5px;
+    margin-left: 100px;
+    border-style: solid;
+    border-color: $primary-color;
+    border-width: 1px;
+    border-bottom: none;
+    border-top: none;
+    a.saveChanges {
+      text-decoration: none;
+      border-radius: 7px;
+      background: $primary-color;
+      color: white;
+      padding: 5px;
+      margin-left: 85%;
+    }
+    .ion-android-upload{
+      color: white;
+      margin-right: 0.5rem;
+    }
+    .Checking-div{
+      margin-top: 20px;
+      margin-bottom: 20px;
+      span.automatic-login{
+        margin-left: 2%;
+      }
+      span.require-password{
+        margin-left: 20%;
+        margin-right: 5%;
+      }
+    }
+    input.box-automatic-oui{
+      margin-left: 50px;
+    }
+    .box-password-oui{
+
+    }
+    img{
+      position: relative;
+      top: 5px;
+      margin-left: 5.3rem;
+      width: 2%;
+      height: auto;
+    }
+    i.ion-android-bookmark{
+      margin-left: $detail-form-margin;
+      color: $primary-color;
+    }
+    i.ion-edit{
+      position: relative;
+      bottom: 35px;
+      margin-left: 7.5%;
+      margin-right: 40%;
+      color: $primary-color;
+    }
+    i.ion-eye{
+      color: $primary-color;
+    }
+    input.NomSite, .Login{
+      margin-top: 50px;
+      margin-left: 5%;
+    }
+    input.URL{
+      margin-left: 30%;
+      margin-right: 18%;
+    }
+    input.Password{
+      margin-left: 30%;
+      margin-right: 4%;
+    }
+    textarea.Comments{
+      margin-top: 30px;
+      margin-left: 14.1%;
+      border-color: $primary-color;
+      border-width: 2px;
+    }
+    input{
+      border-color: $primary-color;
+    }
+  }
+
 }

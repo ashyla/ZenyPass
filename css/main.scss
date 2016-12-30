@@ -1,18 +1,6 @@
 // Important variables : App colors, foundation framework overrides
 @import 'variables';
 
-// We import foundation
-//@import 'foundation-sites/scss/foundation';
-
-// And some of its modules
-// @include foundation-global-styles;
-// @include foundation-flex-grid;
-// @include foundation-typography;
-// @include foundation-button;
-// @include foundation-forms;
-// @include foundation-visibility-classes;
-// @include foundation-table;
-
 // Building CSS
 
 @import 'components/ListeFormulaires';
@@ -20,4 +8,5 @@
 
 body {
   background-color: white;
+  font-family: $body-font-family;
 }
