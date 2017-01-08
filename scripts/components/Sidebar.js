@@ -1,18 +1,31 @@
 var React = require('react');
 var ReactDom = require('react-dom');
-
-var SearchBar = require('./SearchBar.js')
+var SearchBar = require('./SearchBar.js');
+var Formulaire = require('./Formulaire');
+var ReactFireMixin = require('reactfire');
 
 var Sidebar = React.createClass({
+  mixins: [ReactFireMixin],
   getInitialState: function() {
     return{
       currentPage: ""
     }
   },
+  createCard: function() {
+    var Ref = firebase.database().ref('Formulaires');
+    Ref.push({
+      Name: "New Card",
+      Comments: "Nouvelle Card",
+      Login:"",
+      URL:"",
+      password:"",
+      Tag:""
+    });
+  },
   header: function() {
     return(
       <div>
-        <a href='#' className="newCard"><i className="ion-plus-round"></i>Create new Card</a>
+        <a href='#' onClick={this.createCard} className="newCard"><i className="ion-plus-round"></i>Create new Card</a>
         <a href='#' className="Morepswd"><i className="ion-ios-cart"></i>Buy more passwords</a>
         <div className="SearchBar2">
           <SearchBar />

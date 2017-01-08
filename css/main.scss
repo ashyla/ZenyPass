@@ -1,10 +1,14 @@
 // Important variables : App colors, foundation framework overrides
 @import 'variables';
-
+@font-face {
+  font-family: 'QuickSand';
+  src: url('fonts/Quicksand-Regular.otf') format('opentype');
+}
 // Building CSS
 
 @import 'components/ListeFormulaires';
 @import 'components/Sidebar';
+@import 'components/AllModal';
 
 body {
   background-color: white;

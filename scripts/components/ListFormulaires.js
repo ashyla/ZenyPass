@@ -18,11 +18,12 @@ var ListFormulaires = React.createClass({
     return(
       <div className="listeForm">
         {
-          this.state.formulaires.map(function(formulaire,i){
-          return(
-            <Formulaire formulaire={formulaire} key={formulaire['.key']}/>
-          )
-        })}
+           this.state.formulaires.map((formulaire,i) => {
+            return(
+              <Formulaire formulaire={formulaire} key={formulaire['.key']}/>
+            )
+          })
+         }
       </div>
     )
   }

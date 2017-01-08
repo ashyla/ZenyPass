@@ -1,36 +1,44 @@
 .Sidebar {
+  img{
+    margin-top: 0.3rem;
+  }
   .header{
-    width: auto;
+    width: 100%;
     background-color: $primary-color;
     margin-left: $sidebar-width-large;
     padding: 3.7rem;
+    position: fixed;
+    z-index: 3;
   }
   .sidebar1{
-    position: absolute;
-    height: 100%;
-    margin-top: 8.5rem;
+    min-height: 100vh;
+    position: fixed;
+    margin-top: 8.6rem;
     width: $sidebar-width-large;
     flex-direction: column;
-    display: flex;
     background-color: $secondary-color;
-    margin-right: 0;
   }
   .Home{
     float: left;
     width: $sidebar-width-large;
     height: 5.1rem;
     background-color: white;
+    position: fixed;
   }
   .SearchBar1{
     background-color: $primary-color;
     padding: 0.5rem;
     .ion-android-search{
-      margin-right: 50px;
+      margin-right: 2rem;
       color: white;
     }
     .Recherche{
-      margin-right: 250px;
-      border-width: inherit;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      margin-right: 20px;
+      border-width: 2px;
+      width: 400px;
       box-shadow: none;
       background-color: $primary-color;
     }
@@ -38,12 +46,17 @@
   .SearchBar2{
     float: right;
     .ion-android-search{
-      margin-left: 100px;
+      margin-right: 2rem;
       color: white;
     }
     .Recherche{
-      margin-left: 100px;
-      border-width: inherit;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      position: relative;
+      margin-right: 40rem;
+      width: 400px;
+      border-width: 2px;
       box-shadow: none;
       background-color: $primary-color;
     }
@@ -51,17 +64,24 @@
   .newCard{
     background: white;
     padding: 5px;
+    padding-right: 32px;
     border-radius: 7px;
     color: $primary-color;
     text-decoration: none;
+    position: relative;
+    bottom: 1rem;
+    left: 2.9rem;
   }
   .Morepswd{
+    position: relative;
     background: white;
     padding: 5px;
+    top: 2rem;
+    right: 10.6rem;
     border-radius: 7px;
     color: $primary-color;
     text-decoration: none;
-    margin-left: 2rem;
+
   }
   .ion-plus-round{
     margin-right: 2rem;

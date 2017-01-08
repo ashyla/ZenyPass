@@ -1,13 +1,21 @@
 .ListeFormulaires {
+  padding-top: 9rem;
   .listeForm{
     margin-left: $sidebar-width-large;
     list-style-type: none;
     width: auto;
   }
-  h2 {
+  img.logo {
+    position: relative;
+    width:8%;
+    height: auto;
+    top: 5rem;
+    left: 3rem;
+  }
+  h2{
     margin-left: 200px;
   }
-  span {
+  .Comments{
     margin-left: 200px;
   }
   .line {
@@ -19,10 +27,8 @@
   .ion-arrow-down-b{
     color: $primary-color;
     float: right;
-  }
-  .ion-arrow-up-b{
-    color: $primary-color;
-    float: right;
+    position: relative;
+    right: 2rem;
   }
   .ion-close-round{
     color: $primary-color;
@@ -36,9 +42,10 @@
     float: right;
     position: relative;
     right: 0.2rem;
-    bottom: 1rem;
+    bottom: 1.5rem;
   }
   .DetailsForm{
+    box-shadow: 0 1px 5px;
     width: auto;
     height: auto;
     margin: 5px;
@@ -48,21 +55,39 @@
     border-width: 1px;
     border-bottom: none;
     border-top: none;
+    .react-tags{
+      margin-left: 11rem;
+    }
+    .ion-pricetags{
+      color: $primary-color;
+      position: relative;
+      right: 31.3rem;
+      top: 1.5rem;
+    }
+    .ion-ios-copy-outline{
+      color: $primary-color;
+      position: relative;
+      left: 2rem;
+    }
     a.saveChanges {
       text-decoration: none;
+      position: relative;
       border-radius: 7px;
       background: $primary-color;
       color: white;
       padding: 5px;
       margin-left: 85%;
+      bottom: 1.5rem;
     }
     .ion-android-upload{
       color: white;
       margin-right: 0.5rem;
     }
     .Checking-div{
-      margin-top: 20px;
+      margin-left: 13%;
+      margin-top: 15px;
       margin-bottom: 20px;
+      padding-bottom: 2rem;
       span.automatic-login{
         margin-left: 2%;
       }
@@ -70,12 +95,12 @@
         margin-left: 20%;
         margin-right: 5%;
       }
-    }
-    input.box-automatic-oui{
-      margin-left: 50px;
-    }
-    .box-password-oui{
-
+      input.box-automatic-oui{
+        margin-left: 50px;
+      }
+      input.box-automatic-non{
+        margin-left: 20px;
+      }
     }
     img{
       position: relative;
@@ -88,6 +113,13 @@
       margin-left: $detail-form-margin;
       color: $primary-color;
     }
+    i.ion-gear-b{
+      position: relative;
+      top: 2.5rem;
+      margin-left: 7.5%;
+      margin-right: 50%;
+      color: $primary-color;
+    }
     i.ion-edit{
       position: relative;
       bottom: 35px;
@@ -95,7 +127,7 @@
       margin-right: 40%;
       color: $primary-color;
     }
-    i.ion-eye{
+    i.ion-eye, i.ion-eye-disabled{
       color: $primary-color;
     }
     input.NomSite, .Login{
@@ -115,10 +147,15 @@
       margin-left: 14.1%;
       border-color: $primary-color;
       border-width: 2px;
+      border-top: none;
+      border-bottom: none;
+      border-right: none;
     }
     input{
       border-color: $primary-color;
+      border-top: none;
+      border-left: none;
+      border-right: none;
     }
   }
-
 }

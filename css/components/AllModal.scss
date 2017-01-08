@@ -1,0 +1,100 @@
+ body{
+  margin: inherit;
+  .ModalChange{
+    text-align: center;
+    color: $primary-color;
+    position: absolute;
+    width: 500px;
+    height: 100px;
+    top: 50%; left: 50%;
+    border-style: solid;
+    border-color: $primary-color;
+    border-width: 3px;
+    background-color: white;
+    border-radius: 15px;
+    .ion-close-round{
+      padding-right: 1.5rem;
+    }
+    .ion-android-upload{
+      padding-right: 2rem;
+    }
+    .okChange{
+      text-decoration: none;
+      background-color: $primary-color;
+      color: white;
+      padding: 4px;
+      border-radius: 7px;
+      position: relative;
+      right: 25%;
+      top: 65%;
+      }
+    .noChange{
+      text-decoration: none;
+      background-color: $primary-color;
+      color: white;
+      padding: 4px;
+      border-radius: 7px;
+      position: relative;
+      top: 20%;
+      left: 25%;
+      }
+  }
+  .ModalMdp{
+    text-align: center;
+    color: $primary-color;
+    position: absolute;
+    width: 400px;
+    height: 100px;
+    top: 50%; left: 50%;
+    border-style: solid;
+    border-color: $primary-color;
+    border-width: 3px;
+    background-color: white;
+    border-radius: 15px;
+    input.InputModalMdp{
+      border-color: $primary-color;
+    }
+    .okMdp{
+      text-decoration: none;
+      color: white;
+      background-color: $primary-color;
+      border-radius: 7px;
+      padding: 5px;
+      margin-left: 2rem;
+    }
+  }
+  .ModalTrash{
+    text-align: center;
+    color: $primary-color;
+    position: absolute;
+    width: 400px;
+    height: 100px;
+    top: 50%; left: 50%;
+    border-style: solid;
+    border-color: $primary-color;
+    border-width: 3px;
+    background-color: white;
+    border-radius: 15px;
+    .ion-close-round{
+      padding-right: 0.5rem;
+    }
+    .ion-trash-a{
+      padding-right: 0.5rem;
+    }
+    .aCloseRound{
+      text-decoration: none;
+      color: white;
+      background-color: $primary-color;
+      border-radius: 7px;
+      padding: 5px;
+    }
+    .aTrash{
+      text-decoration: none;
+      background-color: red;
+      color: white;
+      padding: 5px;
+      border-radius: 7px;
+      margin-right: 5%;
+      }
+    }
+}
