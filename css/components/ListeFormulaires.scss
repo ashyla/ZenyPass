@@ -1,161 +1,19 @@
 .ListeFormulaires {
   padding-top: 9rem;
+  .fade-enter {
+    opacity: 0.01;
+    margin-left: 100px;
+  }
+  .fade-enter.fade-enter-active {
+    opacity: 1;
+    margin-left: 0px;
+    transition: opacity 3000ms ease-in, margin-left 0ms ease-in;
+  }
   .listeForm{
     margin-left: $sidebar-width-large;
     list-style-type: none;
     width: auto;
-  }
-  img.logo {
-    position: relative;
-    width:8%;
-    height: auto;
-    top: 5rem;
-    left: 3rem;
-  }
-  h2{
-    margin-left: 200px;
-  }
-  .Comments{
-    margin-left: 200px;
-  }
-  .line {
-    width: auto;
-    height: 2px;
-    margin: 20px;
-    background-color: $primary-color;
-  }
-  .ion-arrow-down-b{
-    color: $primary-color;
-    float: right;
-    position: relative;
-    right: 2rem;
-  }
-  .ion-close-round{
-    color: $primary-color;
-    float: right;
-    position: relative;
-    right: 1rem;
-    bottom: 3rem;
-  }
-  .ion-trash-a{
-    color: red;
-    float: right;
-    position: relative;
-    right: 0.2rem;
-    bottom: 1.5rem;
-  }
-  .DetailsForm{
-    box-shadow: 0 1px 5px;
-    width: auto;
-    height: auto;
-    margin: 5px;
-    margin-left: 100px;
-    border-style: solid;
-    border-color: $primary-color;
-    border-width: 1px;
-    border-bottom: none;
-    border-top: none;
-    .react-tags{
-      margin-left: 11rem;
-    }
-    .ion-pricetags{
-      color: $primary-color;
-      position: relative;
-      right: 31.3rem;
-      top: 1.5rem;
-    }
-    .ion-ios-copy-outline{
-      color: $primary-color;
-      position: relative;
-      left: 2rem;
-    }
-    a.saveChanges {
-      text-decoration: none;
-      position: relative;
-      border-radius: 7px;
-      background: $primary-color;
-      color: white;
-      padding: 5px;
-      margin-left: 85%;
-      bottom: 1.5rem;
-    }
-    .ion-android-upload{
-      color: white;
-      margin-right: 0.5rem;
-    }
-    .Checking-div{
-      margin-left: 13%;
-      margin-top: 15px;
-      margin-bottom: 20px;
-      padding-bottom: 2rem;
-      span.automatic-login{
-        margin-left: 2%;
-      }
-      span.require-password{
-        margin-left: 20%;
-        margin-right: 5%;
-      }
-      input.box-automatic-oui{
-        margin-left: 50px;
-      }
-      input.box-automatic-non{
-        margin-left: 20px;
-      }
-    }
-    img{
-      position: relative;
-      top: 5px;
-      margin-left: 5.3rem;
-      width: 2%;
-      height: auto;
-    }
-    i.ion-android-bookmark{
-      margin-left: $detail-form-margin;
-      color: $primary-color;
-    }
-    i.ion-gear-b{
-      position: relative;
-      top: 2.5rem;
-      margin-left: 7.5%;
-      margin-right: 50%;
-      color: $primary-color;
-    }
-    i.ion-edit{
-      position: relative;
-      bottom: 35px;
-      margin-left: 7.5%;
-      margin-right: 40%;
-      color: $primary-color;
-    }
-    i.ion-eye, i.ion-eye-disabled{
-      color: $primary-color;
-    }
-    input.NomSite, .Login{
-      margin-top: 50px;
-      margin-left: 5%;
-    }
-    input.URL{
-      margin-left: 30%;
-      margin-right: 18%;
-    }
-    input.Password{
-      margin-left: 30%;
-      margin-right: 4%;
-    }
-    textarea.Comments{
-      margin-top: 30px;
-      margin-left: 14.1%;
-      border-color: $primary-color;
-      border-width: 2px;
-      border-top: none;
-      border-bottom: none;
-      border-right: none;
-    }
-    input{
-      border-color: $primary-color;
-      border-top: none;
-      border-left: none;
-      border-right: none;
-    }
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 }

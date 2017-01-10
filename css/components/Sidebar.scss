@@ -9,8 +9,10 @@
     padding: 3.7rem;
     position: fixed;
     z-index: 3;
+    min-width: 100em;
   }
   .sidebar1{
+    z-index: 3;
     min-height: 100vh;
     position: fixed;
     margin-top: 8.6rem;
@@ -24,42 +26,6 @@
     height: 5.1rem;
     background-color: white;
     position: fixed;
-  }
-  .SearchBar1{
-    background-color: $primary-color;
-    padding: 0.5rem;
-    .ion-android-search{
-      margin-right: 2rem;
-      color: white;
-    }
-    .Recherche{
-      border-top: none;
-      border-left: none;
-      border-right: none;
-      margin-right: 20px;
-      border-width: 2px;
-      width: 400px;
-      box-shadow: none;
-      background-color: $primary-color;
-    }
-  }
-  .SearchBar2{
-    float: right;
-    .ion-android-search{
-      margin-right: 2rem;
-      color: white;
-    }
-    .Recherche{
-      border-top: none;
-      border-left: none;
-      border-right: none;
-      position: relative;
-      margin-right: 40rem;
-      width: 400px;
-      border-width: 2px;
-      box-shadow: none;
-      background-color: $primary-color;
-    }
   }
   .newCard{
     background: white;

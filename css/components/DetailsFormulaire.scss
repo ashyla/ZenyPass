@@ -1,0 +1,248 @@
+.DetailsForm{
+  .fade-Details-appear {
+    opacity: 0.01;
+  }
+  .fade-Details-appear.fade-Details-appear-active {
+    opacity: 1;
+    transition: opacity 3000ms ease-in;
+  }
+  .fade-Details-leave{
+    opacity: 1;
+  }
+  .fade-Details-leave.fade-Details-leave-active {
+   opacity: 0.01;
+   transition: opacity 3s ease-in;
+   transition-duration: 3s;
+  }
+  min-width: 30em;
+  box-shadow: 0 1px 5px;
+  width: auto;
+  height: auto;
+  margin: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-style: solid;
+  border-color: $primary-color;
+  border-width: 2px;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  display: flex;
+  flex-direction: row;
+  .react-tags{
+    margin-left: 15%;
+  }
+  i.ion-pricetags{
+    color: $primary-color;
+    position: relative;
+    margin-left: 2%;
+    right: 43%;
+    top: 1.5rem;
+  }
+  li i.ion-pricetags{
+    color: $primary-color;
+    position: relative;
+    margin-left: 2%;
+    left: 5.5%;
+    top: 1.5rem;
+  }
+  i.ion-ios-copy-outline{
+    color: $primary-color;
+    position: relative;
+    left: 2rem;
+  }
+  a.saveChanges {
+    text-decoration: none;
+    position: relative;
+    border-radius: 7px;
+    background: $primary-color;
+    color: white;
+    padding: 5px;
+    margin-left: 60rem;
+    right: 1rem;
+    bottom: 1.5rem;
+  }
+  a.saveChanges-1700{
+    text-decoration: none;
+    position: relative;
+    border-radius: 7px;
+    background: $primary-color;
+    color: white;
+    padding: 5px;
+    margin-left: 10rem;
+    right: 1rem;
+    bottom: 1.5rem;
+  }
+  i.ion-android-upload{
+    color: white;
+    margin-right: 0.5rem;
+  }
+  img{
+    position: relative;
+    top: 5px;
+    right: 7.8%;
+    margin-left: 15%;
+    width: 2%;
+    height: auto;
+  }
+  i.ion-android-bookmark{
+    margin-left: 8%;
+    color: $primary-color;
+  }
+  i.ion-gear-b{
+    position: relative;
+    top: 2.5rem;
+    margin-left: 7.5%;
+    margin-right: 50%;
+    color: $primary-color;
+  }
+  i.ion-edit{
+    position: relative;
+    bottom: 35px;
+    margin-left: 7.5%;
+    margin-right: 40%;
+    color: $primary-color;
+  }
+  i.ion-eye, i.ion-eye-disabled{
+    color: $primary-color;
+  }
+  input.NomSite{
+    margin-top: 4%;
+    margin-left: 6%;
+  }
+  input.Login{
+    margin-top: 4%;
+    margin-left: -2%;
+  }
+  input.URL{
+    margin-left: 30%;
+    margin-right: 18%;
+  }
+  input.Password{
+    margin-left: 30%;
+    margin-right: 4%;
+  }
+  textarea.Comments{
+    margin-top: 30px;
+    margin-left: 15%;
+    border-color: $primary-color;
+    border-width: 2px;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    width: 60%;
+  }
+  input{
+    border-color: $primary-color;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+  .DetailsForm > input{
+    -webkit-flex:1 1 auto;
+    flex: 1 1 auto;
+  }
+  .DetailsUp-1700{
+    li{
+      margin-bottom: 20px;
+    }
+    img.img-1700{
+      position: relative;
+      top: 5px;
+      left: 3%;
+      margin-left: 15%;
+      width: 5%;
+      height: auto;
+    }
+    .react-tag-1700{
+      margin-left: 18%;
+    }
+    .space-pricetags-1700{
+      margin-left: -7%;
+    }
+    li i.ion-edit{
+      position: relative;
+      bottom: 35px;
+      margin-left: 19%;
+      margin-right: 40%;
+      color: $primary-color;
+    }
+    li i.ion-android-bookmark{
+      position: relative;
+      margin-left: 20%;
+      color: $primary-color;
+    }
+    input.NomSite-1700{
+      margin-top: 4%;
+      margin-left: 8%;
+    }
+    input.Login-1700{
+      margin-top: 2%;
+      margin-left: 10%;
+    }
+    input.URL-1700{
+      margin-top: 2%;
+      margin-left: 30%;
+      margin-right: 18%;
+    }
+    input.Password-1700{
+      margin-top: 2%;
+      margin-left: 30%;
+      margin-right: 4%;
+    }
+    textarea.Comments-1700{
+      margin-top: 30px;
+      margin-left: 30%;
+      border-color: $primary-color;
+      border-width: 2px;
+      border-top: none;
+      border-bottom: none;
+      border-right: none;
+      width: 60%;
+    }
+  }
+  .Checking-div-1700{
+    margin-left: 15%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding-bottom: 2rem;
+    li.automatic-login{
+      margin-bottom: 15px;
+    }
+    input.box-automatic-oui{
+      margin-left: 17.1%;
+    }
+    input.box-automatic-non{
+      margin-left: 20px;
+    }
+    input.box-password-non{
+      margin-left: 20px;
+    }
+    input.box-password-oui{
+      margin-left: 4%;
+    }
+  }
+  .Checking-div{
+    margin-left: 13%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding-bottom: 2rem;
+    span.automatic-login{
+      margin-left: 2%;
+    }
+    span.require-password{
+      margin-left: 25%;
+    }
+    input.box-automatic-oui{
+      margin-left: 3%;
+    }
+    input.box-automatic-non{
+      margin-left: 20px;
+    }
+    input.box-password-oui{
+      margin-left: 3%;
+    }
+    input.box-password-non{
+      margin-left: 20px;
+    }
+  }
+}

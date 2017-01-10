@@ -3,6 +3,7 @@ var ReactDom = require('react-dom');
 var SearchBar = require('./SearchBar.js');
 var Formulaire = require('./Formulaire');
 var ReactFireMixin = require('reactfire');
+var MediaQuery = require('react-responsive');
 
 var Sidebar = React.createClass({
   mixins: [ReactFireMixin],
@@ -27,9 +28,11 @@ var Sidebar = React.createClass({
       <div>
         <a href='#' onClick={this.createCard} className="newCard"><i className="ion-plus-round"></i>Create new Card</a>
         <a href='#' className="Morepswd"><i className="ion-ios-cart"></i>Buy more passwords</a>
-        <div className="SearchBar2">
-          <SearchBar />
-        </div>
+        <MediaQuery minWidth={1400}>
+          <div className="SearchBar2">
+            <SearchBar />
+          </div>
+        </MediaQuery>
       </div>
     )
   },

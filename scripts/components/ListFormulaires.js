@@ -2,6 +2,7 @@ var React = require('react');
 var ReactDom = require('react-dom');
 var ReactFireMixin = require('reactfire');
 var Formulaire = require('./Formulaire.js');
+var ReactCSSTransitionGroup = require('react-addons-css-transition-group');
 
 var ListFormulaires = React.createClass({
   mixins: [ReactFireMixin],
@@ -17,6 +18,7 @@ var ListFormulaires = React.createClass({
   render: function() {
     return(
       <div className="listeForm">
+        <ReactCSSTransitionGroup transitionName="fade">
         {
            this.state.formulaires.map((formulaire,i) => {
             return(
@@ -24,6 +26,7 @@ var ListFormulaires = React.createClass({
             )
           })
          }
+         </ReactCSSTransitionGroup>
       </div>
     )
   }

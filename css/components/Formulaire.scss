@@ -1,0 +1,41 @@
+.Formulaire{
+  h2{
+    margin-left: 200px;
+  }
+  .Comments{
+    margin-left: 200px;
+  }
+  .line {
+    width: auto;
+    height: 2px;
+    margin: 20px;
+    background-color: $primary-color;
+  }
+  .ion-arrow-down-b{
+    color: $primary-color;
+    float: right;
+    position: relative;
+    right: 2rem;
+  }
+  .ion-close-round{
+    color: $primary-color;
+    float: right;
+    position: relative;
+    right: 1rem;
+    bottom: 3rem;
+  }
+  .ion-trash-a{
+    color: red;
+    float: right;
+    position: relative;
+    right: 0.2rem;
+    bottom: 1.5rem;
+  }
+  img.logo {
+    position: relative;
+    width:8%;
+    height: auto;
+    top: 5rem;
+    left: 3rem;
+  }
+}

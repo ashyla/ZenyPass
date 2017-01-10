@@ -47,6 +47,7 @@
     "firebase": "^3.6.1",
     "prop-types": "^0.2.0",
     "react-overlays": "^0.6.10",
+    "react-responsive": "^1.2.5",
     "react-router": "^1.0.0-rc3",
     "react-tag-autocomplete": "^5.0.4",
     "reactfire": "^1.0.0",

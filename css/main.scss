@@ -8,9 +8,16 @@
 
 @import 'components/ListeFormulaires';
 @import 'components/Sidebar';
-@import 'components/AllModal';
+@import 'components/ModalTrash';
+@import 'components/Formulaire';
+@import 'components/DetailsFormulaire';
+@import 'components/SearchBar';
+@import 'components/ModalMdp';
+@import 'components/ModalChange';
 
 body {
   background-color: white;
   font-family: $body-font-family;
+  margin: inherit;
+  min-width: 30em;
 }
