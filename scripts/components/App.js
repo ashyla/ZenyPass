@@ -9,12 +9,7 @@ var App = React.createClass({
     return(
       <div className="App">
         <div className="Sidebar">
-          <aside>
-            <Sidebar history={this.props.history}/>
-          </aside>
-        </div>
-        <div className="ListeFormulaires">
-          <ListFormulaires />
+            <Sidebar/>
         </div>
       </div>
     )

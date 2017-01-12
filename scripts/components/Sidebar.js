@@ -4,14 +4,10 @@ var SearchBar = require('./SearchBar.js');
 var Formulaire = require('./Formulaire');
 var ReactFireMixin = require('reactfire');
 var MediaQuery = require('react-responsive');
+var MuiThemeProvider = require('material-ui/styles/MuiThemeProvider');
 
 var Sidebar = React.createClass({
   mixins: [ReactFireMixin],
-  getInitialState: function() {
-    return{
-      currentPage: ""
-    }
-  },
   createCard: function() {
     var Ref = firebase.database().ref('Formulaires');
     Ref.push({
@@ -28,11 +24,9 @@ var Sidebar = React.createClass({
       <div>
         <a href='#' onClick={this.createCard} className="newCard"><i className="ion-plus-round"></i>Create new Card</a>
         <a href='#' className="Morepswd"><i className="ion-ios-cart"></i>Buy more passwords</a>
-        <MediaQuery minWidth={1400}>
           <div className="SearchBar2">
             <SearchBar />
           </div>
-        </MediaQuery>
       </div>
     )
   },

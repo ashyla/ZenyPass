@@ -50,6 +50,7 @@
     "react-responsive": "^1.2.5",
     "react-router": "^1.0.0-rc3",
     "react-tag-autocomplete": "^5.0.4",
+    "react-tap-event-plugin": "^2.0.1",
     "reactfire": "^1.0.0",
     "scss-lint": "0.0.0"
   }
